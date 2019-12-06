@@ -1,0 +1,26 @@
+﻿@model PFinal.Models.USUARIO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>USUARIO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CONTRASEñA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CONTRASEñA)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NOMBRE }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
